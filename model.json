@@ -1,0 +1,129 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "stream finder",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SearchMovie",
+                    "slots": [
+                        {
+                            "name": "movie",
+                            "type": "AMAZON.Movie"
+                        },
+                        {
+                            "name": "service",
+                            "type": "services"
+                        }
+                    ],
+                    "samples": [
+                        "is the movie {movie} on {service}",
+                        "where can i watch the movie {movie}",
+                        "is {movie} on {service}",
+                        "where can i watch {movie}",
+                        "where to watch {movie}",
+                        "where can i find {movie}",
+                        "where i can watch {movie}",
+                        "where i can find {movie}"
+                    ]
+                },
+                {
+                    "name": "SearchTV",
+                    "slots": [
+                        {
+                            "name": "show",
+                            "type": "AMAZON.TVSeries"
+                        },
+                        {
+                            "name": "service",
+                            "type": "services"
+                        },
+                        {
+                            "name": "movie",
+                            "type": "AMAZON.Movie"
+                        }
+                    ],
+                    "samples": [
+                        "where can i find {show}",
+                        "where to watch {show}",
+                        "Where can I watch {show} ",
+                        "Is {show} on {service}",
+                        "where i can find {show}",
+                        "where i can watch {show}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "services",
+                    "values": [
+                        {
+                            "id": "123",
+                            "name": {
+                                "value": "Fox",
+                                "synonyms": [
+                                    "fox"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "15",
+                            "name": {
+                                "value": "Hulu",
+                                "synonyms": [
+                                    "hulu"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "8",
+                            "name": {
+                                "value": "Netflix",
+                                "synonyms": [
+                                    "netflix"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "31",
+                            "name": {
+                                "value": "HBO go"
+                            }
+                        },
+                        {
+                            "id": "27",
+                            "name": {
+                                "value": "HBO now",
+                                "synonyms": [
+                                    "hbo"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "9",
+                            "name": {
+                                "value": "Amazon Prime Video",
+                                "synonyms": [
+                                    "amazon",
+                                    "amazon prime",
+                                    "prime video"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
